@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urdu Novel Bank – Read & Download Urdu Novels (PDF)</title>
+  <meta name="description" content="Search Urdu Novel Bank for famous Urdu novels, romantic stories, and PDF downloads. Type a novel or author and we'll open the results on urdunovelbank.org." />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Urdu Novel Bank",
+    "url": "https://urdunovelbank.org/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://urdunovelbank.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" class="logo" alt="Urdu Novel Bank" />
+        <div class="brand-text">
+          <h1>Urdu Novel Bank</h1>
+          <p class="tagline">اردو ناول — پی ڈی ایف اور آن لائن مطالعہ</p>
+        </div>
+      </div>
+      <a class="cta ghost" href="https://urdunovelbank.org/" rel="noopener">Go to Site</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Search Urdu novels & authors</h2>
+        <p class="sub">We will open results on <strong>urdunovelbank.org</strong> using the <code>?s=</code> search pattern.</p>
+
+        <form id="searchForm" class="form" autocomplete="on">
+          <label for="q" class="sr-only">Search novels</label>
+          <input id="q" name="q" type="search" placeholder="e.g., Nimra Ahmed, Jannat Kay Pattay, Umera Ahmed" required />
+          <button id="searchBtn" type="submit">Search</button>
+        </form>
+
+        <p id="msg" class="msg" aria-live="polite"></p>
+
+        <ul class="chips">
+          <li><button data-fill="romantic urdu novels">Romantic</button></li>
+          <li><button data-fill="nimra ahmed">Nimra Ahmed</button></li>
+          <li><button data-fill="umera ahmed">Umera Ahmed</button></li>
+          <li><button data-fill="complete urdu novels pdf">Complete PDF</button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="how container">
+      <h3>How it works</h3>
+      <ol>
+        <li>Type a novel title, author name, or keyword.</li>
+        <li>We sanitize your query.</li>
+        <li>We redirect to <b>https://urdunovelbank.org/?s=&lt;term&gt;</b> (same tab).</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Urdu Novel Bank</span>
+      <nav class="links">
+        <a href="./README.md">Docs</a>
+        <a href="https://urdunovelbank.org/" rel="noopener">Main Site</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

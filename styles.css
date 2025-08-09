@@ -1,0 +1,32 @@
+:root{
+  --bg:#0b1220; --surface:#0f172a; --muted:#94a3b8; --text:#e2e8f0; --brand:#22c55e; --brand2:#60a5fa; --ring:rgba(96,165,250,.35); --radius:16px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#0b1020 60%,#0a0f1a);color:var(--text);font-family:Inter,'Noto Nastaliq Urdu',system-ui}
+.container{width:min(calc(100% - 32px),980px);margin-inline:auto}
+.site-header{border-bottom:1px solid rgba(148,163,184,.12);background:rgba(15,23,42,.6);backdrop-filter:blur(6px);position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px}
+.brand-text h1{font-size:18px;margin:0}
+.tagline{margin:0;font-size:12px;color:var(--muted)}
+a.cta{padding:10px 14px;border-radius:999px;text-decoration:none;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0a0f1a;font-weight:700}
+a.cta.ghost{background:transparent;color:var(--text);border:1px solid rgba(148,163,184,.2)}
+.hero{padding:56px 0 24px;text-align:center}
+.hero h2{font-size:32px;margin:8px 0}
+.sub{color:var(--muted);margin-top:0}
+.form{display:grid;grid-template-columns:1fr auto;gap:10px;background:rgba(15,23,42,.8);border:1px solid rgba(148,163,184,.12);border-radius:var(--radius);padding:12px;margin-top:22px}
+.form input{background:#0b1220;color:var(--text);border:1px solid rgba(148,163,184,.2);outline:none;padding:14px;border-radius:12px;font-size:16px}
+.form input:focus{border-color:var(--brand2);box-shadow:0 0 0 4px var(--ring)}
+.form button{border:0;padding:14px 18px;border-radius:12px;font-size:16px;font-weight:700;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0b1220;cursor:pointer}
+.msg{margin-top:10px;min-height:20px}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:20px 0 0;padding:0}
+.chips li{list-style:none}
+.chips button{border:1px solid rgba(148,163,184,.2);background:rgba(2,6,23,.35);color:var(--text);padding:6px 10px;border-radius:999px;cursor:pointer}
+.how{padding:24px 0 56px}
+.site-footer{border-top:1px solid rgba(148,163,184,.12);padding:18px 0;color:var(--muted)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between}
+.links a{color:var(--muted);margin-left:12px;text-decoration:none}
+.links a:hover{color:var(--text)}
+@media(max-width:640px){.form{grid-template-columns:1fr}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

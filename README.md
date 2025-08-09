@@ -1,16 +1,18 @@
-## Hi there 👋
+# Urdu Novel Bank (Launcher Site)
 
-<!--
-**urdunovelbank/urdunovelbank** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is a minimal open-source launcher that lets users search Urdu Novel Bank from a simple static page and forwards them to the main site using WordPress' search pattern.
 
-Here are some ideas to get you started:
+**Live target:** https://urdunovelbank.org/
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Redirect format:** `https://urdunovelbank.org/?s=<term>&utm_source=github&utm_medium=referral`
+
+## Usage
+- Open `index.html` or host the folder on GitHub Pages/Netlify/Vercel.
+- Type a novel or author and submit.
+- The page redirects in the same tab to the site with `?s=`.
+
+## Tech
+Pure HTML/CSS/JS — no build step.
+
+## License
+MIT — see `LICENSE`.
