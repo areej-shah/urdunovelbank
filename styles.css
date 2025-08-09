@@ -8,8 +8,7 @@ body{margin:0;background:linear-gradient(180deg,var(--bg),#0b1020 60%,#0a0f1a);c
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
 .brand{display:flex;align-items:center;gap:12px}
 .logo-link{display:flex;align-items:center;text-decoration:none;position:relative}
-.logo{width:40px;height:40px}
-.book-icon{font-size:20px;margin-left:8px;opacity:0.9}
+.book-icon{font-size:32px;opacity:0.9}
 .brand-text h1{font-size:18px;margin:0}
 .tagline{margin:0;font-size:12px;color:var(--muted)}
 
